@@ -1,9 +1,5 @@
 # SMB2 Client for Node.js
 
-[![Node compatibility](https://badgen.net/npm/node/@marsaud/smb2)](https://npmjs.org/package/@marsaud/smb2) [![License](https://badgen.net/npm/license/@marsaud/smb2)](https://npmjs.org/package/@marsaud/smb2) [![PackagePhobia](https://badgen.net/packagephobia/install/@marsaud/smb2)](https://packagephobia.now.sh/result?p=@marsaud/smb2)
-
-[![Package Version](https://badgen.net/npm/v/@marsaud/smb2)](https://npmjs.org/package/@marsaud/smb2) [![Build Status](https://travis-ci.org/Node-SMB/marsaud-smb2.png?branch=master)](https://travis-ci.org/Node-SMB/marsaud-smb2) [![Latest Commit](https://badgen.net/github/last-commit/Node-SMB/marsaud-smb2)](https://github.com/Node-SMB/marsaud-smb2/commits/master)
-
 ## Introduction
 
 This library is a simple implementation of SMB2 for Node.js. It allows you to access a SMB2 share as if you were using the native fs library.
@@ -13,7 +9,7 @@ The development is still at an experimental stage and should not be yet consider
 ## Installation
 
 ```bash
-npm install -S @marsaud/smb2
+npm install -S @bulentv/smb2
 ```
 
 ## API
@@ -55,7 +51,7 @@ Example:
 
 ```javascript
 // load the library
-var SMB2 = require('@marsaud/smb2');
+var SMB2 = require('@bulentv/smb2');
 
 // create an SMB2 instance
 var smb2Client = new SMB2({
@@ -333,6 +329,7 @@ smb2Client.open('path\\to\\the\\file', 'w', function(err, fd) {
 
 - [Benjamin Chelli](https://github.com/bchelli)
 - [Fabrice Marsaud](https://github.com/marsaud)
+- [Bulent Vural](https://github.com/bulentv)
 
 ## References
 
@@ -341,6 +338,10 @@ smb2Client.open('path\\to\\the\\file', 'w', function(err, fd) {
     http://msdn.microsoft.com/en-us/library/cc246482.aspx
 
 ## License
+
+Copyright for portions of project node-smb2 are held by Benjamin Chelli, 2013-2014 as part of project @bulentv/smb2. 
+Copyright for portions of project marsaud-smb2 are held by Fabrice Marsaud, as part of project @bulentv/smb2. 
+All other copyright for project @bulentv/smb2 are held by Bulent Vural, 2020.
 
 (The MIT License)
 
