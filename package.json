@@ -28,7 +28,6 @@
     "CIFS",
     "Samba"
   ],
-  "scripts": {
-  },
+  "scripts": {},
   "license": "MIT"
 }
